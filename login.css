@@ -16,32 +16,38 @@ body{
     background-size: cover;
     background-position: center;
 }
-
 .wrapper{
+    position: absolute;
     width: 60vmin;
+    height: 80vmin;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     background: transparent;
     border: 1vmin solid rgba(255, 255, 255, .1);
     backdrop-filter: blur(10vmin);
     color: #fff;
     border-radius: 10vmin;
-    padding: 10vmin 4vmin;
 }
 
 .wrapper h1{
-    font-size: 8vmin;
+    font-size: 7vmin;
     text-align: center;
 }
 
 .wrapper .input-box{
     position: relative;
     width: 100%;
-    height: 50px;
-    margin: 3vmin 0;
+    height: 5vmin;
+    margin: 5vmin 0;
+    display: flex;
+    align-items: center;
 }
 
 .input-box input{
     width: 100%;
-    height: 100%;
+    height: 7vmin;
     background: transparent;
     border: none;
     outline: none;
@@ -49,7 +55,7 @@ body{
     border-radius: 40vmin;
     font-size: 3vmin;
     color: #fff;
-    padding: 3vmin 3vmin 3vmin 3vmin;
+    padding: 3vmin 2vmin 3vmin 2vmin;
 }
 
 .input-box input::placeholder{
@@ -63,7 +69,6 @@ label{
 .input-box box-icon{
     position: absolute;
     right: 2vmin;
-    top: 30%;
     transform: translate(-50%);
     font-size: 2vmin;
 }
@@ -115,12 +120,16 @@ label{
     color: white;
 }
 
-.register-link p a{
+.register-link a{
     color: #fff;
     text-decoration: none;
     font-weight: 600;
 }
 
-.register-link p a:hover{
+.register-link a:hover{
     text-decoration: underline;
+}
+
+.register{
+    z-index: -1;
 }

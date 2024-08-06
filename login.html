@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="login.css">
 </head>
 <body>
-    <div class="wrapper">
+    <div class="wrapper login">
         <form action="">
             <h1>Login</h1>
             <div class="input-box">
@@ -25,12 +25,41 @@
             <button type="submit" class="btn">Login</button>
             <div class="register-link">
                 <p>Don't have an account? </p>
-                <a href="#">Register</a>
+                <a class="change" href="#">Register</a>
+            </div>
+        </form>
+    </div>
+    <div class="wrapper register">
+        <form action="">
+            <h1>Register</h1>
+            <div class="input-box">
+                <input type="text" placeholder="Name" required>
+            </div>
+            <div class="input-box">
+                <input type="text" placeholder="Email" required>
+            </div>
+            <div class="input-box">
+                <input type="text" placeholder="Username" required>
+                <box-icon type='solid' name='user'></box-icon>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Password" required>
+                <box-icon name='lock-alt' type='solid' ></box-icon>
+            </div>
+            <button type="submit" class="btn">Sign Up</button>
+            <div class="register-link">
+                <p>Already have an account? </p>
+                <a class="change" href="#">Login</a>
             </div>
         </form>
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ad84b356b0.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="login.js"></script>
 
 </body>
 </html>

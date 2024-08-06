@@ -4,15 +4,57 @@
 }
 .bg img{
     z-index: -1;
-    position: absolute;
+    position: fixed;
     width: 100%;
 }
 #heading{
     position: fixed;
     width: 100%;
     padding: 3vmin;
-    font-size: 10vmin;
+    font-size: 8vmin;
     text-align: center;
     color: white;
+    z-index: 2;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    backdrop-filter: blur(10px);
+}
+.big{
+    border-radius: 50px;
+    padding: 5vmin;
+    padding-top: 20vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5vmin;
+}
+.small{
+    width: 50vmin;
+    height: 60vmin;
+    border-radius: 50px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+}
+.img{
+    height: 40vmin;
+    width: 100%;
+}
+
+p{
+    padding: 1vmin;
+    align-content: center;
+    width: 100%;
+    height: 20vmin;
+    text-align: center;
+    font-size: 3vmin;
+    color: white;
+    backdrop-filter: blur(5px);
+}
+
+.small:hover{
+    scale: 1.05;
 }
