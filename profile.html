@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <script src="https://kit.fontawesome.com/ad84b356b0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <div class="container">
+        <div class="profile-header">
+          <div class="profile-img">
+            <img src="images/evs1.jpg" width="200" alt="Profile Image">
+          </div>
+          <div class="profile-nav-info">
+            <h3 class="user-name">Code Quest</h3>
+            <div class="address">
+              <p id="state" class="state">Bhopal,</p>
+              <span id="country" class="country">Madhya Pradesh</span>
+            </div>
+          </div>
+          <div class="profile-option">
+            <div class="notification">
+              <i class="fa fa-bell"></i>
+              <span class="alert-message">3</span>
+            </div>
+          </div>
+        </div>
+      
+        <div class="main-bd">
+          <div class="left-side">
+            <div class="profile-side">
+              <p class="mobile-no"><i class="fa fa-phone"></i> +91 XXXXX X1574</p>
+              <p class="user-mail"><i class="fa fa-envelope"></i> codequest@gmail.com</p>
+              <div class="user-bio">
+                <h3>Address</h3>
+                <p class="bio">
+                    VIT BHOPAL UNIVERSITY, Astha, Bhopal, 466114
+                </p>
+              </div>
+              <div class="profile-btn">
+                <button class="chatbtn" id="chatBtn"><i class="fa fa-comment"></i>KNOW ABOUT ENVIRONMENT</button>
+                <button class="createbtn" id="Create-post"><i class="fa fa-plus"></i> ADD LOCAL PROBLEM</button>
+              </div>
+              <div class="user-rating">
+                <div class="rate">3 Problem Submissions</div>
+              </div>
+            </div>
+      
+          </div>
+          <div class="right-side">
+            <div class="nav">
+              <ul>
+                <li onclick="tabs(0)" id="user-queued" class="active">Queued</li>
+                <li onclick="tabs(1)" id="user-solved">Solved</li>
+                <li onclick="tabs(2)" class="user-setting"> Settings</li>
+              </ul>
+            </div>
+            <div class="queued">
+                <p><b>Date of Submission: 07-08-2024</b></p>
+                <p><b>Problem Description:</b></p>
+                <p><b>ADDRESS: </b>VIT BHOPAL UNIVERSITY, Astha, Bhopal, 466114</p>
+                <p><b>STATUS: </b>In Queue</p>
+            </div>
+            <div class="queued">
+                <p><b>Date of Submission: 07-08-2024</b></p>
+                <p><b>Problem Description:</b></p>
+                <p><b>ADDRESS: </b>VIT BHOPAL UNIVERSITY, Astha, Bhopal, 466114</p>
+                <p><b>STATUS: </b>In Queue</p>
+            </div>
+            <div class="solved hidden">
+                <p><b>Date of Submission: 07-08-2024</b></p>
+                <p><b>Problem Description:</b></p>
+                <p><b>ADDRESS: </b>VIT BHOPAL UNIVERSITY, Astha, Bhopal, 466114</p>
+                <p><b>STATUS: </b>Soved on <b>07-08-2024</b></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    <script src="profile.js"></script>
+</body>
+</html>
