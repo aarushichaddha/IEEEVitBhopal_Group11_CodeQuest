@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(https://i.postimg.cc/nV7VBMYW/bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.wrapper{
+    width: 60vmin;
+    background: transparent;
+    border: 1vmin solid rgba(255, 255, 255, .1);
+    backdrop-filter: blur(10vmin);
+    color: #fff;
+    border-radius: 10vmin;
+    padding: 10vmin 4vmin;
+}
+
+.wrapper h1{
+    font-size: 8vmin;
+    text-align: center;
+}
+
+.wrapper .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 3vmin 0;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40vmin;
+    font-size: 3vmin;
+    color: #fff;
+    padding: 3vmin 3vmin 3vmin 3vmin;
+}
+
+.input-box input::placeholder{
+    color: #fff;
+}
+
+label{
+    display: flex;
+    align-items: center;
+}
+.input-box box-icon{
+    position: absolute;
+    right: 2vmin;
+    top: 30%;
+    transform: translate(-50%);
+    font-size: 2vmin;
+}
+
+.wrapper .remember-forgot{
+    display: flex;
+    justify-content: space-between;
+    font-size: 2vmin;
+    margin: 3vmin 0 2vmin;
+}
+
+.remember-forgot label input{
+    accent-color: #fff;
+    margin-right: 1vmin;
+
+}
+
+.remember-forgot a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+
+.wrapper .btn{
+    width: 100%;
+    height: 6vmin;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 4vmin;
+    box-shadow: 0 0 10vmin rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 3vmin;
+    color: #333;
+    font-weight: 600;
+}
+
+.wrapper .register-link{
+    font-size: 2vmin;
+    text-align: center;
+    margin: 3vmin 0 3vmin;
+}
+.wrapper .register-link a{
+    font-size: 3vmin;
+    text-decoration: none;
+    color: white;
+}
+
+.register-link p a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover{
+    text-decoration: underline;
+}
