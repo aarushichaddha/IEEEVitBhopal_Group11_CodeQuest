@@ -4,31 +4,23 @@ document.querySelectorAll(".change").forEach((element) => {
         console.log("clicked");
         a++;
         if(a%2==0){
-            gsap.to(".register",{
-                transform:'rotateY(90deg)',
-            });
-            gsap.to(".login",{
-                cssText: 'z-index:1',
-            });
-            gsap.from(".login",{
+            gsap.to("#register",{
                 transform:'rotateY(-90deg)',
             });
-            gsap.to(".register",{
-                cssText: 'z-index:-1',
+            document.querySelector("#login").classList.remove("hidden")
+            document.querySelector("#register").classList.add("hidden")
+            gsap.from("#login",{
+                transform:'rotateY(90deg)',
             });
         }
         else{
-            gsap.to(".login",{
+            gsap.to("#login",{
                 transform:'rotateY(90deg)',
             });
-            gsap.to(".register",{
-                cssText: 'z-index:1',
-            });
-            gsap.from(".register",{
+            document.querySelector("#register").classList.remove("hidden")
+            document.querySelector("#login").classList.add("hidden")
+            gsap.from("#register",{
                 transform:'rotateY(-90deg)',
-            });
-            gsap.to(".login",{
-                cssText: 'z-index:-1',
             });
         }
     })

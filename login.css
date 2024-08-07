@@ -130,6 +130,6 @@ label{
     text-decoration: underline;
 }
 
-.register{
-    z-index: -1;
+.hidden{
+    display: none;
 }
